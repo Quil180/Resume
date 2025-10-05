@@ -40,6 +40,7 @@
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
+\input{glyphtounicode}
 \pdfgentounicode=1
 
 %-------------------------
@@ -72,10 +73,10 @@
     \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeProjectHeading}[2]{
+\newcommand{\resumeProjectHeading}[3]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
+			\small#1 -- \textit{\small #3} & #2 \\
     \end{tabular*}\vspace{-7pt}
 }
 

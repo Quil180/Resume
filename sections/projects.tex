@@ -3,63 +3,80 @@
 
       \resumeProjectHeading
         {\textbf{Chikorita Filter -- FPGA Vision Accelerator}}{Aug 2025 -- Present}
+			  {Solo Project}
         \resumeItemListStart
-          \resumeItem{Architecting a low-latency FPGA DSP pipeline in Verilog/VHDL for the 2026 IEEE SoutheastCon Competition, implementing parallel modules for real-time vision preprocessing, motor control, and IR communication.}
-          \resumeItem{Developing and verifying the FPGA-to-CPU interface (AXI/Memory-Mapped) to stream sensor data for Kalman filter processing, enabling successful hardware/software sensor fusion.}
+				\resumeItem{Architecting a low-latency FPGA DSP pipeline in \textbf{Verilog} for the 2026 IEEE SoutheastCon Competition, implementing parallel modules for real-time vision preprocessing, motor control, and IR communication all on the Red Pitaya 125-14.}
+				\resumeItem{Developing and verifying the \textbf{FPGA-to-CPU interface} (AXI/Memory-Mapped) to stream sensor data for Kalman filter processing, enabling successful hardware/software sensor fusion using \textbf{SystemVerilog} and the \textbf{UVM} library.}
         \resumeItemListEnd
 
       \resumeProjectHeading
         {\textbf{KnightCore -- Full RISC-V SoC -- 2025 AMD Hardware Competition}}{Apr 2025 -- Aug 2025}
+				{Group Project}
         \resumeItemListStart
-          \resumeItem{Collaborated within a 5-member team to design and implement a complete System-on-Chip (SoC), featuring a custom 32-bit RISC-V CPU and full custom GPU, capable of vector math and memory management on the Red Pitaya 125-14 board.}
-          \resumeItem{Developed a comprehensive verification environment using the CocotB framework, creating testbenches for all modules. Authored directed and randomized stress tests, and assertion-based checks to ensure correctness and ISA compliance.}
+					\resumeItem{Architected a modular, reusable verification environment from scratch in Python (CocotB) to validate a custom 32-bit RISC-V SoC against the \textbf{RV32I} instruction set architecture (ISA).}
+          \resumeItem{Developed a comprehensive test suite with directed tests for all ISA-defined instructions and constrained-random stimulus generation to stress the ALU and branch prediction logic, leading to the discovery and resolution of 5 critical RTL bugs.}
         \resumeItemListEnd
       
       \resumeProjectHeading
         {\textbf{Anqa 32-bit RISC-V Processor}}{Feb 2025 -- Present}
+				{Solo Project}
         \resumeItemListStart
-          \resumeItem{Designed a 32-bit RISC-V CPU core, implementing key components like a parameterized adder (half/full/multi-bit) and instruction decoding logic for the RV32I base instruction set (arithmetic, logical, load/store, branch).}
-          \resumeItem{Developed a Verilog implementation plan using Vivado, detailing the ALU, register file, single-cycle datapath design, and instruction pipeline stages, with comprehensive documentation for future development.}
+					\resumeItem{Designing a 32-bit RISC-V CPU core, implementing key components like a parameterized adder (half/full/multi-bit) and instruction decoding logic for the \textbf{RV32I} base instruction set (arithmetic, logical, load/store, branch).}
+					\resumeItem{Developing a \textbf{Verilog} implementation plan using Vivado, detailing the ALU, register file, single-cycle datapath design, and instruction pipeline stages, with comprehensive documentation for future development.}
         \resumeItemListEnd
       
-      \resumeProjectHeading
-        {\textbf{Fallout Style Pip-Boy}}{Oct 2024 -- Apr 2025}
-        \resumeItemListStart
-          \resumeItem{Developed a modular Rust application employing dynamic linking and Cargo workspaces for a scalable, plugin-based architecture, designed for enhanced code reusability and maintainability.}
-          \resumeItem{Architected the system to effectively support dynamic loading of plugins, enabling flexible extension of functionality with minimal modification to the application’s core components and overall structure.}
-        \resumeItemListEnd
+				%   \resumeProjectHeading
+				%     {\textbf{Fallout Style Pip-Boy}}{Oct 2024 -- Apr 2025}
+				%     {Group Project}
+				%     \resumeItemListStart
+				% \resumeItem{Developed a modular \textbf{Rust} application employing dynamic linking and Cargo workspaces for a scalable, plugin-based architecture, designed for enhanced code reusability and maintainability.}
+				%       \resumeItem{Architected the system to effectively support dynamic loading of plugins, enabling flexible extension of functionality with minimal modification to the application’s core components and overall structure.}
+				%     \resumeItemListEnd
 
       \resumeProjectHeading
-        {\textbf{CyndaQuil Compiler/Language}}{Sep 2024 -- Jan 2025}
-        \resumeItemListStart
-          \resumeItem{Designed and implemented 'CyndaQuilLanguage', a custom programming language, developing its compiler in C++ and C with Makefile and CMake, showcasing expertise in language design, parsing, and code generation for efficient execution.}
-          \resumeItem{Engineered low-level system components and optimized performance, integrating Assembly and C to enhance hardware-software interfacing, ensuring minimal latency and efficient computation for embedded systems.}
-          %\resumeItem{Automated the compilation and linking process using NASM and GNU ld to generate executable binaries. Streamlined the pipeline to support structured programming, efficient binary generation, and improved execution performance.}
-          %\resumeItem{Developed structured project documentation using TeX, creating clear technical manuals to support compiler usage, language syntax, and system architecture for maintainability.}
-        \resumeItemListEnd
+        {\textbf{2025 SouthEastCon Robotics Competition -- Embedded Software Lead}}{Sep 2024 -- Apr 2025}
+				{Group Project}
+			\resumeItemListStart
+			\resumeItem{Led software pipeline for 10+ team using \textbf{ROS2}, enabling low-latency control between modular hardware and decision nodes. Used Gazebo and \textbf{OpenCV} for validation, contributing to 1st place in Design and 2nd in Performance at competition.}
+			\resumeItem{Developed embedded firmware on Teensy 4.1 for sensor fusion and actuator control with modular, \textbf{real-time C++} code. Optimized for high-frequency loops and low resource use, improving system responsiveness and performance.}
+				% \resumeItem{Managed Git/GitHub workflows with branching strategies, code reviews, and issue tracking to ensure team-wide consistency. Built CI/CD pipelines for automated testing and deployment, and implemented HIL testing for early hardware validation.}
+			\resumeItemListEnd
+
+			%   \resumeProjectHeading
+			%     {\textbf{CyndaQuil Compiler/Language}}{Sep 2024 -- Jan 2025}
+			% {Solo Project}
+			%     \resumeItemListStart
+			% \resumeItem{Designed and implemented 'CyndaQuilLanguage', a custom programming language, developing its compiler in \textbf{C++} and \textbf{C} with Makefile and CMake, showcasing expertise in language design, parsing, and code generation for efficient execution.}
+			% \resumeItem{Engineered low-level system components and optimized performance, integrating \textbf{Assembly and C} to enhance hardware-software interfacing, ensuring minimal latency and efficient computation for embedded systems.}
+			%       %\resumeItem{Automated the compilation and linking process using NASM and GNU ld to generate executable binaries. Streamlined the pipeline to support structured programming, efficient binary generation, and improved execution performance.}
+			%       %\resumeItem{Developed structured project documentation using TeX, creating clear technical manuals to support compiler usage, language syntax, and system architecture for maintainability.}
+			%     \resumeItemListEnd
 
       % \resumeProjectHeading
       %     {\textbf{Screaming Banshee Box of Doom}}{Feb 2024 -- Apr 2024}
+			%     {Solo Project}
       %     \resumeItemListStart
-      %       %\resumeItem{Designed and developed an interactive sound simulation device using Arduino Mega, integrating LiDAR and gyroscope for real-time positional and orientation data. Built a custom sensor fusion pipeline for precise movement tracking.}
+			%       %\resumeItem{Designed and developed an interactive sound simulation device using an \textbf{Arduino Mega}, integrating LiDAR and gyroscope for real-time positional and orientation data. Built a custom sensor fusion pipeline for precise movement tracking.}
       %       \resumeItem{Programmed dynamic audio processing algorithms to calculate pitch, volume, and distortion from sensor input. Implemented real-time filtering for smooth, accurate sound modulation and controlled motion-based adjustments.}
-      %       \resumeItem{Configured serial communication using I²C between the Arduino and host laptop, transmitting processed sensor data to generate expressive, trumpet-like sounds through software-based synthesis using Chuck for real-time audio processing.}
+			%       \resumeItem{Configured serial communication using \textbf{I²C} between the Arduino and host laptop, transmitting processed sensor data to generate expressive, trumpet-like sounds through software-based synthesis using Chuck for real-time audio processing.}
       %     \resumeItemListEnd
 
       %\resumeProjectHeading
       %    {\textbf{Great Naval Orange Race}}{Jan 2024 -- May 2024}
+			%    {Group Project}
       %    \resumeItemListStart
-      %      \resumeItem{Engineered a 1x1x1 meter airboat using SolidWorks, optimizing stability and buoyancy parameters to ensure reliable water transport, achieving full functionality during competition testing.}
+			%      \resumeItem{Engineered a 1x1x1 meter airboat using \textbf{SolidWorks}, optimizing stability and buoyancy parameters to ensure reliable water transport, achieving full functionality during competition testing.}
       %      \resumeItem{Collaborated in troubleshooting and refining the boat's control code on launch day, ensuring optimal functionality and a successful race outcome.}
       %      \resumeItem{Performed multiple rounds of testing and calibration to improve control and stability, making key final adjustments that contributed to a successful race outcome.}
       %    \resumeItemListEnd
       %
       %\resumeProjectHeading
       %    {\textbf{Spirit Splash Duck Launcher}}{Aug 2023 -- Dec 2023}
+			%    {Solo Project}
       %    \resumeItemListStart
       %      \resumeItem{Collaborated with a team of 4 to design and test an autonomous robot for obstacle navigation, achieving 100\% on test courses during the final trials.}
-      %      \resumeItem{Developed and optimized a 3D-printed launcher using Onshape, refining controlled launch trajectories through iterative testing and analysis.}
-      %      \resumeItem{Programmed a line-following system in Arduino IDE with 3 team members, fine-tuning it for precise path tracking and tower avoidance to enhance navigation speed and reliability.}
+			%      \resumeItem{Developed and optimized a 3D-printed launcher using \textbf{Onshape}, refining controlled launch trajectories through iterative testing and analysis.}
+			%      \resumeItem{Programmed a line-following system in  \textbf{C} in Arduino IDE with 3 team members, fine-tuning it for precise path tracking and tower avoidance to enhance navigation speed and reliability.}
       %    \resumeItemListEnd
 
     \resumeSubHeadingListEnd
