@@ -17,12 +17,12 @@ A professional, ATS-friendly resume built with LaTeX.  This modular template mak
 
 ```
 Resume/
-├── Awad_Yousef. tex      # Main document entry point
-├── libraries. tex        # Package imports & custom commands
+├── Awad_Yousef.tex      # Main document entry point
+├── libraries.tex        # Package imports & custom commands
 ├── Awad_Yousef.pdf      # Compiled resume output
 └── sections/
     ├── education.tex    # Education section
-    ├── experience. tex   # Work experience section
+    ├── experience.tex   # Work experience section
     ├── leadership.tex   # Leadership & activities
     ├── projects.tex     # Technical projects
     └── skills.tex       # Skills & technologies
@@ -50,7 +50,7 @@ pdflatex Awad_Yousef.tex
 
 ### Using Overleaf
 
-You can also import this project into [Overleaf](https://www.overleaf. com/) for online editing and compilation without local setup.
+You can also import this project into [Overleaf](https://www.overleaf.com/) for online editing and compilation without local setup.
 
 ## ✏️ Customization
 
