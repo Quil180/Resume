@@ -1,21 +1,79 @@
-# Personal Resume
+# 📄 Personal Resume
 
-This repository contains the LaTeX source code for my personal resume.
+A professional, ATS-friendly resume built with LaTeX.  This modular template makes it easy to maintain and customize your resume. 
 
-## 📜 Description
+<p align="center">
+  <a href="Awad_Yousef. pdf">📥 View PDF</a>
+</p>
 
-This project uses LaTeX to generate a professional resume. The main TeX file (in my case `Awad_Yousef.tex`) contains the structure and content.
+## ✨ Features
 
-## 🛠️ Building
+- **ATS-Optimized** — Machine-readable PDF output for applicant tracking systems
+- **Modular Structure** — Separate files for each section (education, experience, projects, etc.)
+- **Clean Design** — Professional formatting with customizable styling
+- **Easy to Customize** — Simply edit the section files to update your resume
 
-To compile the resume from the source code, you will need a LaTeX distribution installed (such as [TeX Live](https://www.tug.org/texlive/), [MiKTeX](https://miktex.org/), or [MacTeX](https://www.tug.org/mactex/)).
+## 📁 Project Structure
 
-You may also need specific LaTeX packages depending on the template used. Check the `libraries.tex` file preamble (the section before `\begin{document}`) for `\usepackage{...}` commands to see the requirements.
-
-Once you have the necessary setup, navigate to the repository directory in your terminal and compile the resume using:
-
-```bash
-pdflatex Awad_Yousef.tex # Change name to your Last_First.tex
+```
+Resume/
+├── Awad_Yousef. tex      # Main document entry point
+├── libraries. tex        # Package imports & custom commands
+├── Awad_Yousef.pdf      # Compiled resume output
+└── sections/
+    ├── education.tex    # Education section
+    ├── experience. tex   # Work experience section
+    ├── leadership.tex   # Leadership & activities
+    ├── projects.tex     # Technical projects
+    └── skills.tex       # Skills & technologies
 ```
 
-*Note: You might need to run the command multiple times if your resume includes features like a table of contents, bibliography, or complex cross-references.*
+## 🛠️ Prerequisites
+
+You'll need a LaTeX distribution installed on your system: 
+
+| Platform | Recommended Distribution |
+|----------|--------------------------|
+| Windows  | [MiKTeX](https://miktex.org/) |
+| macOS    | [MacTeX](https://www.tug.org/mactex/) |
+| Linux    | [TeX Live](https://www.tug.org/texlive/) |
+
+## 🚀 Building the Resume
+
+Navigate to the repository directory and compile: 
+
+```bash
+pdflatex Awad_Yousef.tex
+```
+
+> **Note:** Run the command twice if you have cross-references or a table of contents to ensure proper linking.
+
+### Using Overleaf
+
+You can also import this project into [Overleaf](https://www.overleaf. com/) for online editing and compilation without local setup.
+
+## ✏️ Customization
+
+1. **Update personal info** — Edit `Awad_Yousef.tex` with your name and contact details
+2. **Modify sections** — Update files in the `sections/` directory with your information
+3. **Adjust styling** — Customize fonts, margins, and formatting in `libraries.tex`
+
+### Included LaTeX Packages
+
+| Package | Purpose |
+|---------|---------|
+| `hyperref` | Clickable links |
+| `fancyhdr` | Header/footer customization |
+| `titlesec` | Section title formatting |
+| `enumitem` | List customization |
+| `tabularx` | Flexible tables |
+
+## 📜 License
+
+Feel free to use this template for your own resume! 
+
+---
+
+<p align="center">
+  Made with ❤️ and LaTeX
+</p>
