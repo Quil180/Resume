@@ -5,8 +5,9 @@
        {Advanced Micro Devices, Inc.}{Austin, TX}
        {Validation/Debug Intern}{Sept 2026 -- Present}
        \resumeItemListStart
-         \resumeItem{Developing an automated issue-triage pipeline using Python, Jira REST APIs, and the Anthropic Claude API to parse cross-team communication threads, autonomously managing ticket generation, context syncing, and resolution closures.}
-         \resumeItem{Provisioning and staging bare-metal testbeds across the post-silicon SoC validation farm, verifying DUT hardware interfaces, OS environments, and firmware images to eliminate bring-up anomalies prior to regression suite execution.}
+         \resumeItem{Developing a Python issue-triage pipeline integrating Jira REST APIs and the Anthropic Claude API to sync debug results and context across 2 validation teams, eliminating manual copy-paste and saving 5--10 minutes per triaged ticket.}
+         \resumeItem{Reimaging 15--20 post-silicon SoC validation systems multiple times weekly via an automated flashing suite, deploying matched BIOS, firmware, OS, and driver versions so regression failures isolate to genuine test failures or external factors.}
+         \resumeItem{Developing a Python script for the reimaging suite that collapses a multi-step manual stage of the flow into a single automated step, reducing per-cycle operator intervention across the validation farm.}
        \resumeItemListEnd
 
       \resumeSubheading
@@ -15,7 +16,7 @@
        \resumeItemListStart
         \resumeItem{Built a Formal Property Verification (FPV) flow via Synopsys VC Formal from scratch, authoring 20+ SVAs for bounded model checking, catching 3 critical bugs (illegal state transitions, deadlocks) missed by existing functional tests.}
         \resumeItem{Extended the flow with Formal Security Verification (FSV/SPV) by authoring security properties for an encryption module, formally verifying the module against possible secret leakage.}
-        \resumeItem{Deployed the FPV/FSV suite in GitLab CI/CD with a modular, parameterized structure, reducing new-module verification setup to a copy-paste testbench and a single pipeline variable toggle.}
+        \resumeItem{Deployed the FPV/FSV suite in GitLab CI/CD with a modular, config-driven structure, cutting per-module formal flow setup from 30--60 minutes to $\sim$5 minutes via a parameterized testbench template and a single pipeline variable toggle.}
        \resumeItemListEnd
 
       \resumeSubheadingContinue
