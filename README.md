@@ -3,7 +3,7 @@
 A professional, ATS-friendly resume built with LaTeX.  This modular template makes it easy to maintain and customize your resume. 
 
 <p align="center">
-  <a href="Awad_Yousef. pdf">📥 View PDF</a>
+  <a href="Awad_Yousef.pdf">📥 View PDF</a>
 </p>
 
 ## ✨ Features
