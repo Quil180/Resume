@@ -5,18 +5,17 @@
        {Advanced Micro Devices, Inc.}{Austin, TX}
        {Validation/Debug Intern}{Sept 2026 -- Present}
        \resumeItemListStart
-         \resumeItem{Developing a Python issue-triage pipeline integrating Jira REST APIs and the Anthropic Claude API to sync debug results and context across 2 validation teams, eliminating manual copy-paste and saving 5--10 minutes per triaged ticket.}
-         \resumeItem{Reimaging 15--20 post-silicon SoC validation systems multiple times weekly via an automated flashing suite, deploying matched BIOS, firmware, OS, and driver versions so regression failures isolate to genuine test failures or external factors.}
-         \resumeItem{Developing a Python script for the reimaging suite that collapses a multi-step manual stage of the flow into a single automated step, reducing per-cycle operator intervention across the validation farm.}
+         \resumeItem{Engineering a Python post-silicon debug triage pipeline integrating Jira REST and Anthropic Claude APIs to parse and sync failure context across 2 validation teams, cutting per-ticket triage time by 5–10 minutes.}
+         \resumeItem{Automating a multi-stage Python post-silicon flashing workflow to provision 15–20 SoC validation platforms weekly with locked BIOS, OS, and driver baselines, eliminating drift and isolating true hardware bugs.}
        \resumeItemListEnd
 
       \resumeSubheading
        {Lockheed Martin Corporation}{Orlando, FL}
        {ASIC/FPGA Design CWEP Intern}{Feb 2026 -- July 2026}
        \resumeItemListStart
-        \resumeItem{Built a Formal Property Verification (FPV) flow via Synopsys VC Formal from scratch, authoring 20+ SVAs for bounded model checking, catching 3 critical bugs (illegal state transitions, deadlocks) missed by existing functional tests.}
-        \resumeItem{Extended the flow with Formal Security Verification (FSV/SPV) by authoring security properties for an encryption module, formally verifying the module against possible secret leakage.}
-        \resumeItem{Deployed the FPV/FSV suite in GitLab CI/CD with a modular, config-driven structure, cutting per-module formal flow setup from 30--60 minutes to $\sim$5 minutes via a parameterized testbench template and a single pipeline variable toggle.}
+        \resumeItem{Built a Formal Property Verification (FPV) flow in Synopsys VC Formal and Tcl, authoring 20+ SystemVerilog Assertions (SVAs) for bounded model checking and validating traces in Synopsys VCS to catch 3 RTL deadlock/FSM bugs.}
+        \resumeItem{Extended the formal framework with Formal Security Verification (FSV/SPV) by defining taint-propagation and non-interference properties for a cryptographic module, formally proving the datapath against unauthorized secret leakage.}
+        \resumeItem{Deployed a modular, config-driven FPV/FSV regression suite in GitLab CI/CD using parameterized testbench templates and Tcl build scripts, reducing per-module formal bring-up time from $\sim$60 minutes to $\sim$5 minutes via single variable toggle.}
        \resumeItemListEnd
 
       \resumeSubheadingContinue
